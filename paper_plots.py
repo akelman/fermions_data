@@ -336,7 +336,7 @@ def plot2_energy(data, dest_dir, save_format):
     axarr[1][1].set_xlabel(r"$\lambda$")
     axarr[1][2].set_xlabel(r"$\lambda$")
 
-    # Fix the title in the legend
+    # Set the title in the legend
     for i, j in np.ndindex(axarr.shape):
         axarr[i, j].legend(title=r"$g_{I}$")
 
@@ -443,7 +443,7 @@ def main():
     # Data
     ec_files = glob.glob(r"data/L_*/ec/mass_*/g_*_int_*/summary*.pkl")
     mc_files = glob.glob(r"data/L_*/mc/mass_*/g_*_int_*_mass_*/summary*.pkl")
-    exact_file = r"data/ed_data.csv"
+    exact_file = r"ed_data/ed_data.csv"
     data = get_data(ec_files, mc_files, exact_file)
 
     # Generate plots
