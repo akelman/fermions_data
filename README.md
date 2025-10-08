@@ -1,6 +1,7 @@
 # Fermions Data
 
 This repository stores the data for the paper *Projected Entangled Pair States for Lattice Gauge Theories with Dynamical Fermions*.
+
 arxiv: [https://arxiv.org/abs/2412.16951](https://arxiv.org/abs/2412.16951)
 
 The script `paper_plots.py` generates all of the plots. It can be run (after installation of the required packages) using the command `python paper_plots.py`. This will save (and overwrite) the plots in the directory `generated_plots`.
